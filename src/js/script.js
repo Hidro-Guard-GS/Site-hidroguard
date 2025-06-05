@@ -22,3 +22,25 @@ function toogleMenu(){
 }
 
 btnMobile.addEventListener('click', toogleMenu);
+
+// Slideshow
+let slideIndex = 0;
+showSlides();
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+  if (!slides.length) return;
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  if (dots[slideIndex-1]) dots[slideIndex-1].classList.add("active");
+  setTimeout(showSlides, 5000); // Troca a cada 5 segundos
+}
