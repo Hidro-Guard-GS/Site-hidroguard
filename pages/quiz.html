@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz - Hidroguard</title>
+  
+  <link rel="shortcut icon" href="../src/assets/hidro.png">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../src/assets/hidro-azul.png" alt="Logo" class="logo"></a>
+    <nav id="nav">
+      <button id="btn-mobile" class="click">Menu
+        <span id="hamburguer" class="click"></span>
+      </button>
+      <ul id="menu1">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="formulario.html">Colabore</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><span class="theme-switcher" title="Claro" data-theme="claro">☀️</span></li>
+      <li><span class="theme-switcher" title="Nublado" data-theme="nublado">⛅</span></li>
+      <li><span class="theme-switcher" title="Chuva" data-theme="chuva">🌧️</span></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="quiz-main">
+    <h1>Quiz: Você está preparado para enchentes?</h1>
+    <form id="quizForm">
+      <div class="pergunta">
+        <p>1. O que fazer ao receber um alerta de enchente?</p>
+        <label><input type="radio" name="q1" value="a"> Ignorar, pois pode ser falso</label>
+        <label><input type="radio" name="q1" value="b"> Procurar abrigo em local seguro</label>
+        <label><input type="radio" name="q1" value="c"> Sair para filmar a enchente</label>
+      </div>
+      <div class="pergunta">
+        <p>2. Qual tecnologia ajuda a prever enchentes?</p>
+        <label><input type="radio" name="q2" value="a"> Inteligência Artificial</label>
+        <label><input type="radio" name="q2" value="b"> Rádio AM</label>
+        <label><input type="radio" name="q2" value="c"> Calculadora</label>
+      </div>
+      <div class="pergunta">
+        <p>3. Como colaborar com o sistema?</p>
+        <label><input type="radio" name="q3" value="a"> Cadastrando pontos de alagamento</label>
+        <label><input type="radio" name="q3" value="b"> Compartilhando fake news</label>
+        <label><input type="radio" name="q3" value="c"> Ignorando os alertas</label>
+      </div>
+      <div class="pergunta">
+        <p>4. Qual número ligar em emergência?</p>
+        <label><input type="radio" name="q4" value="a"> 190</label>
+        <label><input type="radio" name="q4" value="b"> 193</label>
+        <label><input type="radio" name="q4" value="c"> 199</label>
+      </div>
+      <div class="pergunta">
+        <p>5. Qual órgão alerta sobre riscos de enchente?</p>
+        <label><input type="radio" name="q5" value="a"> CEMANDEN</label>
+        <label><input type="radio" name="q5" value="b"> CET</label>
+        <label><input type="radio" name="q5" value="c"> ANVISA</label>
+      </div>
+      <div class="pergunta">
+        <p>6. É seguro dirigir em ruas alagadas?</p>
+        <label><input type="radio" name="q6" value="a"> Sim, se a água for rasa</label>
+        <label><input type="radio" name="q6" value="b"> Não</label>
+        <label><input type="radio" name="q6" value="c"> Depende do carro</label>
+      </div>
+      <div class="pergunta">
+        <p>7. Qual é a melhor ação preventiva contra enchente?</p>
+        <label><input type="radio" name="q7" value="a"> Subir móveis</label>
+        <label><input type="radio" name="q7" value="b"> Estocar água</label>
+        <label><input type="radio" name="q7" value="c"> Limpar bueiros</label>
+      </div>
+      <div class="pergunta">
+        <p>8. Enchentes ocorrem por:</p>
+        <label><input type="radio" name="q8" value="a"> Falta de escoamento</label>
+        <label><input type="radio" name="q8" value="b"> Muito sol</label>
+        <label><input type="radio" name="q8" value="c"> Ar seco</label>
+      </div>
+      <div class="pergunta">
+        <p>9. É importante seguir alertas de Defesa Civil?</p>
+        <label><input type="radio" name="q9" value="a"> Depende da ocasião</label>
+        <label><input type="radio" name="q9" value="b"> Só em grandes cidades</label>
+        <label><input type="radio" name="q9" value="c"> Sim, em todas as circunstâncias</label>
+      </div>
+      <div class="pergunta">
+        <p>10. Enchentes podem causar:</p>
+        <label><input type="radio" name="q10" value="a"> Apenas transtornos</label>
+        <label><input type="radio" name="q10" value="b"> Apenas prejuízo financeiro</label>
+        <label><input type="radio" name="q10" value="c"> Danos materias, doenças e mortes</label>
+      </div>
+      <button type="submit">Enviar Respostas</button>
+    </form>
+    <div id="resultado-quiz"></div>
+  </main>
+  <footer class="footer-main">
+    <p>&copy; 2025 Alerta de Enchentes. Todos os direitos reservados.</p>
+  </footer>
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
