@@ -53,7 +53,7 @@ document.querySelectorAll('.dot').forEach((dot, idx) => {
     });
   });
 
-  // Validação de CPF e envio do formulário colaborativo
+// Validação de CPF e envio do formulário colaborativo
 function validarCPF(cpf) {
     cpf = cpf.replace(/[^\d]+/g, '');
     if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false;
@@ -68,4 +68,21 @@ function validarCPF(cpf) {
     if ((resto === 10) || (resto === 11)) resto = 0;
     if (resto !== parseInt(cpf.substring(10, 11))) return false;
     return true;
+  }
+  
+  const form = document.getElementById("colaborativoForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const cpf = document.getElementById("cpf").value;
+      const mensagem = document.getElementById("mensagem-colaborativo");
+      if (!validarCPF(cpf)) {
+        mensagem.textContent = "CPF inválido. Por favor, verifique.";
+        mensagem.style.color = "red";
+        return;
+      }
+      mensagem.textContent = "Ponto registrado! Após validação de outros usuários, ele será publicado.";
+      mensagem.style.color = "green";
+      form.reset();
+    });
   }
