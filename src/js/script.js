@@ -86,3 +86,26 @@ function validarCPF(cpf) {
       form.reset();
     });
   }
+
+// Quiz interativo
+const quizForm = document.getElementById("quizForm");
+if (quizForm) {
+  quizForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    let acertos = 0;
+    if (quizForm.q1.value === "b") acertos++;
+    if (quizForm.q2.value === "a") acertos++;
+    if (quizForm.q3.value === "a") acertos++;
+    if (quizForm.q4.value === "b") acertos++;
+    if (quizForm.q5.value === "a") acertos++;
+    if (quizForm.q6.value === "b") acertos++;
+    if (quizForm.q7.value === "c") acertos++;
+    if (quizForm.q8.value === "a") acertos++;
+    if (quizForm.q9.value === "c") acertos++;
+    if (quizForm.q10.value === "c") acertos++;
+    const resultado = document.getElementById("resultado-quiz");
+    resultado.textContent = `Você acertou ${acertos} de 10 perguntas.`;
+    resultado.style.fontWeight = "bold";
+    resultado.style.marginTop = "20px";
+  });
+}
