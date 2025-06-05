@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidroguard</title>
+  <link rel="shortcut icon" href="src/assets/hidro.png">
+  <link rel="stylesheet" href="src/css/estilo.css">
+</head>
+<body>
+  <header>
+    <img src="src/assets/hidro-azul.png" alt="Logo Hidroguard" class="logo">
+    <nav id="nav">
+      <button id="btn-mobile" class="click">Menu
+        <span id="hamburguer" class="click"></span>
+      </button>
+      <ul id="menu1">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="pages/formulario.html">Colabore</a></li>
+      <li><a href="pages/quiz.html">Quiz</a></li>
+      <li><span class="theme-switcher" title="Claro" data-theme="claro">☀️</span></li>
+      <li><span class="theme-switcher" title="Nublado" data-theme="nublado">⛅</span></li>
+      <li><span class="theme-switcher" title="Chuva" data-theme="chuva">🌧️</span></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="src/assets/enchente1.jpg" alt="Enchente 1" />
+      </div>
+      <div class="slide fade">
+        <img src="src/assets/enchente2.jpg" alt="Enchente 2" />
+      </div>
+      <div class="slide fade">
+        <img src="src/assets/enchente3.jpg" alt="Enchente 3" />
+      </div>
+      <div class="slideshow-dots">
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+      </div>
+    </div>
+    <section class="hero">
+      <nav class="secoes">
+        <ul id="menu">
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#alertas">Alertas</a></li>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#problema">Problema e objetivo</a></li>
+            <li><a href="#ajuda">Benefícios</a></li>
+            <li><a href="#grafico">Gráfico Histórico</a></li>
+            <li><a href="#tecnologias">Tecnologia</a></li>
+        </ul>
+      </nav>
+      <h1>Enchentes: Informação que Salva Vidas</h1>
+      <p>Monitoramento, alertas e colaboração para proteger comunidades brasileiras das enchentes.</p>
+      <a href="pages/formulario.html" class="cta">Colabore com um ponto de alagamento</a>
+    </section>
+
+    <section class="mapa" id="mapa">
+      <h2>Mapa de Zonas de Risco em Tempo Real</h2>
+      <img src="./src/assets/mapa.png" alt="Mapa de zonas de risco" class="mapa-img">
+      <p class="legenda">Áreas coloridas indicam risco de enchente. Clique para detalhes.</p>
+    </section>
+
+    <section class="alertas" id="alertas">
+      <h2>Receba Alertas Personalizados</h2>
+      <ul>
+        <div id="textoAlerta">
+          <li>Alertas por WhatsApp, SMS ou notificações no app/
+          Baseados na sua localização validada/
+          Antecedência mínima de 24h para risco de enchentes</li>
+          <img src="./src/assets/alerta.jpg" alt="alerta">
+        </div>
+      </ul>
+      <a href="pages/formulario.html" class="cta-secundaria">Cadastre-se para receber alertas</a>
+    </section>
+
+    <section class="colaborativo" id="cadastro">
+      <h2>Colabore: Registre Pontos de Alagamento</h2>
+      <div id="textoLocal">
+        <p>Ajude a mapear as áreas afetadas em tempo real. Seu registro será validado por outros usuários.</p>
+        <img src="./src/assets/local.png" alt="local">
+      </div>
+      <a href="pages/formulario.html" class="cta-secundaria">Registrar ponto</a>
+    </section>
+
+    
+    <section class="problema" id="problema">
+      <h2>Problema e objetivos</h2>
+      <div id="textoProblema">
+        <p>As enchentes causam grandes prejuízos materiais e riscos à vida das pessoas.
+        O objetivo do nosso sistema é ajudar populações carentes que sofrem com enchentes</p>
+        <img src="./src/assets/problema.jpg" alt="problema" id="problema-img">
+      </div>
+    </section>
+
+    <section class="ajuda" id="ajuda">
+      <h2>Benefício e ajuda</h2>
+      <div id="textoAjuda">
+        <p>Nosso sistema ajuda na prevenção de enchentes e beneficia populações que sofrem com esse desastre, 
+        com planejamento comunitário preservamos vidas</p>
+        <img src="./src/assets/ajuda.jpg" alt="ajuda">
+      </div>
+    </section>
+
+    <section class="historico" id="grafico">
+      <h2>Gráficos Históricos do Nível da Água</h2>
+      <img src="./src/assets/grafico.jfif" alt="grafico nível da água">
+    </section>
+
+    <section class="tecnologia" id="tecnologias">
+      <h2>Tecnologia a Serviço da Prevenção</h2>
+        <ul>
+          <div id="textoTecnologia">
+            <li>Monitoramento com inteligência/
+            Imagens de satélite e sensoriamento remoto/
+            Big Data para rotas seguras e planejamento urbano/
+            Plataforma colaborativa e acessível</li>
+            <img src="./src/assets/tecnologia.jpg" alt="tecnologia">
+          </div>  
+        </ul>
+    </section>
+
+    <section class="quiz">
+      <h2>Teste seus conhecimentos sobre enchentes</h2>
+      <a href="pages/quiz.html" class="cta">Fazer o Quiz</a>
+    </section>
+  </main>
+  <footer class="footer-main">
+    <p>&copy; 2025 Alerta de Enchentes. Todos os direitos reservados.</p>
+  </footer>
+  <script src="src/js/script.js"></script>
+</body>
+</html>
