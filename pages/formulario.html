@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Hidroguard</title>
+  
+  <link rel="shortcut icon" href="../src/assets/hidro.png">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body class="form-body">
+  <header>
+    <a href="../index.html"><img src="../src/assets/hidro-azul.png" alt="Logo" class="logo"></a>
+    <nav id="nav">
+      <button id="btn-mobile" class="click">Menu
+        <span id="hamburguer" class="click"></span>
+      </button>
+      <ul id="menu1">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="formulario.html">Colabore</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><span class="theme-switcher" title="Claro" data-theme="claro">☀️</span></li>
+      <li><span class="theme-switcher" title="Nublado" data-theme="nublado">⛅</span></li>
+      <li><span class="theme-switcher" title="Chuva" data-theme="chuva">🌧️</span></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="form-main">
+    <h1>Registre um Ponto de Alagamento</h1>
+    <form id="colaborativoForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required>
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required>
+      <label for="localizacao">Localização (latitude, longitude):</label>
+      <input type="text" id="localizacao" name="localizacao" required>
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+      <label for="foto">Foto (opcional):</label>
+      <input type="file" id="foto" name="foto" accept="image/*">
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensagem-colaborativo"></div>
+  </main>
+  <footer class="footer-main">
+    <p>&copy; 2025 Alerta de Enchentes. Todos os direitos reservados.</p>
+  </footer>
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
