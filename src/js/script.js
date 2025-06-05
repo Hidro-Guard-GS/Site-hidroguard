@@ -44,3 +44,11 @@ function showSlides(n) {
   if (dots[slideIndex-1]) dots[slideIndex-1].classList.add("active");
   setTimeout(showSlides, 5000); // Troca a cada 5 segundos
 }
+
+// Dots click
+document.querySelectorAll('.dot').forEach((dot, idx) => {
+    dot.addEventListener('click', function() {
+      slideIndex = idx;
+      showSlides();
+    });
+  });
