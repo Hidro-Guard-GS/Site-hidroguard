@@ -338,7 +338,7 @@
       transform: rotate(-135deg);
       top: -7px;
     }
-    .hero, .mapa, .alertas, .problema, .ajuda, .colaborativo, .historico, .tecnologia, .quiz {
+    .hero, .mapa, .alertas, .problema, .ajuda, .colaborativo, .historico, .tecnologia, .quiz, #imgCadastro {
       padding: 16px 2%;
       margin: 24px 2%;
     }
