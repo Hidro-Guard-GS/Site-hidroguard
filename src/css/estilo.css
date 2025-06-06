@@ -158,8 +158,9 @@
     border-radius: 8px;
   }
   #alertas img{
-    width: 250px;
+    width: 350px;
     height: 200px;
+    margin-right: 100px;
   }
   #textoLocal{
     display: flex;
@@ -171,18 +172,33 @@
     margin-top: 20px;
     list-style: none;
   }
+  #textoAlerta2, #textoProblema2, #textoAjuda2, #textoTecnologia2{
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+    justify-content: space-between;
+  }
+  #imgCadastro{
+    margin-left: 1400px;
+  }
   #problema img{
     width: 400px;
     height: 300px;
+    margin-right: 100px;
   }
   #ajuda img{
     width: 400px;
     height: 300px;
+    margin-right: 100px;
   }
-  
   #grafico img{
     width: 500px;
     height: 350px;
+  }
+  #tecnologias img{
+    width: 350px;
+    height: 200px;
+    margin-right: 100px;
   }
   .mapa-img {
     width: 100%;
